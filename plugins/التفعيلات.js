@@ -18,13 +18,13 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                     sections: [
                       {
                         title: 'التفعيلات',
-                        highlight_label: 'تفعيلات',
+                        highlight_label: 'التفعيلات',
                         rows: [
    {
                             header: 'التفعيلات',
                             title: 'الامر',
-                            description: '.التفعيلات',
-                            id: '.التفعيلات'
+                            description: '',
+                            id: '.المهام'
                           }
                         ]
                       }
@@ -34,63 +34,63 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
                 },
 {
                      name: "cta_url",
-           buttonParamsJson: '{"display_text":"قناتي","url":"https://whatsapp.com/channel/0029VaZQ0FG4dTnQxihmuk01"}'
+           buttonParamsJson: '{"display_text":"💕قناه البوت💐","url":"https://whatsapp.com/channel/0029VaZQ0FG4dTnQxihmuk01"}'
            },
     {
               name: "quick_reply",
-              buttonParamsJson: '{"display_text":".افتح مضاداللينكات2","id":"message"}'
+              buttonParamsJson: '{"display_text":".on مضاداللينكات2","id":"message"}'
             },
      {
          name: "quick_reply",
-              buttonParamsJson: '{"display_text":".اقفل مضاداللينكات2","id":"message"}'
+              buttonParamsJson: '{"display_text":".off مضاداللينكات2","id":"message"}'
             },
      {
           name: "quick_reply",
-              buttonParamsJson: '{"display_text":".افتح مضادالشتائم","id":"message"}'
+              buttonParamsJson: '{"display_text":".on مضادالشتائم","id":"message"}'
             },
      {
           name: "quick_reply",
-              buttonParamsJson: '{"display_text":".اقفل مضادالشتائم","id":"message"}'
+              buttonParamsJson: '{"display_text":".off مضادالشتائم","id":"message"}'
             },
      {
           name: "quick_reply",
-              buttonParamsJson: '{"display_text":".افتح تقيد","id":"message"}'
+              buttonParamsJson: '{"display_text":".on تقيد","id":"message"}'
             },
      {
           name: "quick_reply",
-              buttonParamsJson: '{"display_text":".اقفل تقيد","id":"message"}'
+              buttonParamsJson: '{"display_text":".off تقيد","id":"message"}'
            },
      {
           name: "quick_reply",
-              buttonParamsJson: '{"display_text":".افتح الصحين","id":"message"}'
+              buttonParamsJson: '{"display_text":".on الصحين","id":"message"}'
            },
      {
           name: "quick_reply",
-              buttonParamsJson: '{"display_text":".اقفل الصحين","id":"message"}'
+              buttonParamsJson: '{"display_text":".off الصحين","id":"message"}'
            },
      {
           name: "quick_reply",
-              buttonParamsJson: '{"display_text":".افتح الادمن-فقط","id":"message"}'
+              buttonParamsJson: '{"display_text":".on الادمن-فقط","id":"message"}'
            },
      {
           name: "quick_reply",
-              buttonParamsJson: '{"display_text":".اقفل الادمن-فقط","id":"message"}'
+              buttonParamsJson: '{"display_text":".off الادمن-فقط","id":"message"}'
            },
      {
           name: "quick_reply",
-              buttonParamsJson: '{"display_text":".افتح مضادالخاص","id":"message"}'
+              buttonParamsJson: '{"display_text":".on مضادالخاص","id":"message"}'
           },
      {
           name: "quick_reply",
-              buttonParamsJson: '{"display_text":".اقفل مضادالخاص","id":"message"}'
+              buttonParamsJson: '{"display_text":".off مضادالخاص","id":"message"}'
            },
      {
           name: "quick_reply",
-              buttonParamsJson: '{"display_text":".افتح الترحيب","id":"message"}'
+              buttonParamsJson: '{"display_text":".on الترحيب","id":"message"}'
           },
      {
           name: "quick_reply",
-              buttonParamsJson: '{"display_text":".اقفل الترحيب","id":"message"}'
+              buttonParamsJson: '{"display_text":".off الترحيب","id":"message"}'
             }
               ]
             }
