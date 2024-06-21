@@ -5,9 +5,9 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
     const mentionId = m.key.participant || m.key.remoteJid;
 
     if (device !== 'desktop' || device !== 'web') {      
-        var joanimiimg = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/0f8c2b3a0a56eba1f9173.jpg'}}, { upload: conn.waUploadToServer })
-        const interactiveMessage = { 
-            header: {
+        var joanimiimg = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/2784677013ba9efe6cc03.jpg'}}, { upload: conn.waUploadToServer })
+        const interactiveMessage = {
+            {
               title: '*⌘──〘 ♥📃القوائم📃♥ 〙── ⌘*'
             },
             body: {
@@ -590,14 +590,6 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
     }, {})
 
 }
-
-        let msg = generateWAMessageFromContent(m.chat, {
-            viewOnceMessage: {
-                message: {
-                    interactiveMessage,
-                },
-            },
-        }, { userJid: conn.user.jid, quoted: m })
         msg.message.viewOnceMessage.message.interactiveMessage.contextInfo = { mentionedJid: [mentionId] };
         conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id });
 
@@ -607,6 +599,5 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
 };
 handler.help = ['imgboton'];
 handler.tags = ['For Test'];
-handler.command = /^(اوامر)$/i;
-export default handler
-
+handler.command = /^(imgboton)$/i;
+export default handler;
