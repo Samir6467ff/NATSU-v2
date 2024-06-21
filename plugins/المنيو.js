@@ -591,9 +591,22 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
 
 }
 
-handler.help = ['info']
-handler.tags = ['main']
-handler.command = ['المهام','menu','اوامر','مهام','الاوامر']
+        let msg = generateWAMessageFromContent(m.chat, {
+            viewOnceMessage: {
+                message: {
+                    interactiveMessage,
+                },
+            },
+        }, { userJid: conn.user.jid, quoted: m })
+        msg.message.viewOnceMessage.message.interactiveMessage.contextInfo = { mentionedJid: [mentionId] };
+        conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id });
 
+    } else {
+        conn.sendFile(m.chat, 'JoAnimi•Error.jpg', m);      
+    }    
+};
+handler.help = ['imgboton'];
+handler.tags = ['For Test'];
+handler.command = /^(اوامر)$/i;
 export default handler
 
