@@ -1,13 +1,9 @@
-import { prepareWAMessageMedia, generateWAMessageFromContent, getDevice } from '@whiskeysockets/baileys'
-
-const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
-    const device = await getDevice(m.key.id);
-    const mentionId = m.key.participant || m.key.remoteJid;
-
-    if (device !== 'desktop' || device !== 'web') {      
-        var joanimiimg = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/0f8c2b3a0a56eba1f9173.jpg'}}, { upload: conn.waUploadToServer })
-        const interactiveMessage = {
-         header: {
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+    conn.relayMessage(m.chat, {
+      viewOnceMessage: {
+        message: {
+          interactiveMessage: {
+            header: {
               title: '*⌘──〘 ♥📃القوائم📃♥ 〙── ⌘*'
             },
             body: {
@@ -589,33 +585,10 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
       }
     }, {})
 
-                                  })
-                              },
-                              {
-                                  name: 'send_location',
-                                  buttonParamsJson: JSON.stringify({
-                                  })
-                              }
-  			  		],
-                messageParamsJson: ''
-            }
-        };        
+}
 
-        let msg = generateWAMessageFromContent(m.chat, {
-            viewOnceMessage: {
-                message: {
-                    interactiveMessage,
-                },
-            },
-        }, { userJid: conn.user.jid, quoted: m })
-        msg.message.viewOnceMessage.message.interactiveMessage.contextInfo = { mentionedJid: [mentionId] };
-        conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id });
+handler.help = ['info']
+handler.tags = ['main']
+handler.command = ['المهام','menu','اوامر','مهام','الاوامر']
 
-    } else {
-        conn.sendFile(m.chat, 'JoAnimi•Error.jpg', m);      
-    }    
-};
-handler.help = ['imgboton'];
-handler.tags = ['For Test'];
-handler.command = /^(اوامر)$/i;
-export default handler;
+export default handler
