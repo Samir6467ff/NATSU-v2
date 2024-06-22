@@ -7,31 +7,31 @@ import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
 
-global.botnumber = "201554824764"
+global.botnumber = "201129003230"
 global.confirmCode = ""
 
 global.owner = [
-  ['201554824764', '👑 𝑁𝐴𝑇𝑆𝑈 👑', true],
-  ['201554824764', '💫 𝑁𝐴𝑇𝑆𝑈 💫', true],
-  ['201554824764', '💫 𝑁𝐴𝑇𝑆𝑈 💫', true],
-  ['201554824764', '💫 𝑁𝐴𝑇𝑆𝑈 💫', true],
-  ['201554824764', '💫 𝑁𝐴𝑇𝑆𝑈 💫', true],
-  ['201554824764', '💫 𝑁𝐴𝑇𝑆𝑈 💫', true],
-  ['201554824764', '💫 𝑁𝐴𝑇𝑆𝑈 💫', false],
-  ['201554824764', '💫 𝑁𝐴𝑇𝑆𝑈 💫', true],
-  ['201554824764', '💫 𝑁𝐴𝑇𝑆𝑈 💫', true],
-  ['201554824764','💫 𝑁𝐴𝑇𝑆𝑈 💫', true]
+  ['201129003230', '👑 𝐵𝛩𝑺𝑺 👑', true],
+  ['201129003230', '𝐵𝛩𝑺𝑺⦖🇵🇸', true],
+  ['201129003230', '𝐵𝛩𝑺𝑺⦖🇵🇸', true],
+  ['201129003230', '𝐵𝛩𝑺𝑺⦖🇵🇸', true],
+  ['201129003230', '𝐵𝛩𝑺𝑺⦖🇵🇸', true],
+  ['201129003230', '𝐵𝛩𝑺𝑺⦖🇵🇸', true],
+  ['201129003230', '𝐵𝛩𝑺𝑺⦖🇵🇸', false],
+  ['201129003230', '𝐵𝛩𝑺𝑺⦖🇵🇸', true],
+  ['201129003230', '𝐵𝛩𝑺𝑺⦖🇵🇸', true],
+  ['201129003230','𝐵𝛩𝑺𝑺⦖🇵🇸', true]
 ];
 
-global.suittag = ['201554824764'];
-global.prems = ['201554824764'];
+global.suittag = ['201129003230'];
+global.prems = ['201129003230'];
 
 global.packname = 'NM';
-global.author = '𝑁𝐴𝑇𝑆𝑈 Bot';
-global.wm = '𝑁𝐴𝑇𝑆𝑈 Bot';
-global.titulowm = '𝑁𝐴𝑇𝑆𝑈 Bot';
-global.titulowm2 = `𝑁𝐴𝑇𝑆𝑈 Bot`
-global.igfg = '𝑁𝐴𝑇𝑆𝑈 Bot';
+global.author = '𝑻𝑼𝑹𝑩𝑶 𝑩𝑶𝑻';
+global.wm = '𝑻𝑼𝑹𝑩𝑶 𝑩𝑶𝑻';
+global.titulowm = '𝑻𝑼𝑹𝑩𝑶 𝑩𝑶𝑻';
+global.titulowm2 = `𝑻𝑼𝑹𝑩𝑶 𝑩𝑶𝑻`
+global.igfg = '𝑻𝑼𝑹𝑩𝑶 𝑩𝑶𝑻';
 global.wait = '*[ ⏳ ] انتظر لحظه...*';
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
@@ -57,14 +57,14 @@ global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
 global.wm2 = `${dia} ${fecha}\n𝑁𝐴𝑇𝑆𝑈 - Bot`;
-global.gt = '𝑁𝐴𝑇𝑆𝑈 - Bot';
-global.mysticbot = '𝑁𝐴𝑇𝑆𝑈 - Bot';
-global.md = 'https://whatsapp.com/channel/0029VaZQ0FG4dTnQxihmuk01';
-global.𝑁𝐴𝑇𝑆𝑈bot = 'https://whatsapp.com/channel/0029VaZQ0FG4dTnQxihmuk01';
+global.gt = '𝑇𝑈𝑅𝐵𝛩 - 𝐵𝛩𝑇';
+global.mysticbot = '𝑇𝑈𝑅𝐵𝛩 - 𝐵𝛩𝑇';
+global.md = '‏https://wa.me/message/5VUTXBO7XOMQD1';
+global.𝑁𝐴𝑇𝑆𝑈bot = 'https://wa.me/message/5VUTXBO7XOMQD1';
 global.waitt = '*[ ⏳ ] انتظر...*';
 global.waittt = '*[ ⏳ ] انتظر...*';
 global.waitttt = '*[ ⏳ ] انتظر...*';
-global.nomorown = '201554824764';
+global.nomorown = '201129003230';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
@@ -98,4 +98,3 @@ watchFile(file, () => {
   console.log(chalk.redBright('Update \'config.js\''));
   import(`${file}?update=${Date.now()}`);
 });
-
