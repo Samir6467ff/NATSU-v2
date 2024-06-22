@@ -5,7 +5,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
     const mentionId = m.key.participant || m.key.remoteJid;
 
     if (device !== 'desktop' || device !== 'web') {      
-        var joanimiimg = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/2784677013ba9efe6cc03.jpg'}}, { upload: conn.waUploadToServer })
+        var joanimiimg = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/0f8c2b3a0a56eba1f9173.jpg'}}, { upload: conn.waUploadToServer })
         const interactiveMessage = {
             {
               title: '*⌘──〘 ♥📃القوائم📃♥ 〙── ⌘*'
@@ -597,7 +597,7 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
         conn.sendFile(m.chat, 'JoAnimi•Error.jpg', m);      
     }    
 };
-handler.help = ['imgboton'];
-handler.tags = ['For Test'];
-handler.command = /^(imgboton)$/i;
+handler.help = ['info'];
+handler.tags = ['main'];
+handler.command = /^(اوامر)$/i;
 export default handler;
