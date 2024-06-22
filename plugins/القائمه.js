@@ -72,13 +72,13 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                               {
                                   name: 'cta_url',
                                   buttonParamsJson: JSON.stringify({
-                                      display_text: 'url',
-                                      url: 'https://www.google.com',
+                                      display_text: 'قناة البوت',
+                                      url: 'https://whatsapp.com/channel/0029Vaj2xDiDZ4LhOeUe2y0D',
                                       merchant_url: ''
                                   })
                               },
                               {
-                                  name: 'cta_call',
+                                  name: 'عم',
                                   buttonParamsJson: JSON.stringify({
                                       display_text: 'call',
                                       id: 'message'
