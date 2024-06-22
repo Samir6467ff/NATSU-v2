@@ -89,13 +89,13 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                                   buttonParamsJson: JSON.stringify({
                                       display_text: 'نسخ',
                                       id: 'تربو عمي🤭',
-                                      copy_code: 'message'
+                                      copy_code: 'تربو عمي🤭'
                                   })
                               },
                               {
                                   name: 'cta_reminder',
                                   buttonParamsJson: JSON.stringify({
-                                      display_text: 'cta_reminder',
+                                      display_text: 'تذكير',
                                       id: 'message'
                                   })
                               },
