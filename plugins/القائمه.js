@@ -85,9 +85,9 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
                                   })
                               },
                               {
-                                  name: 'نسخ',
+                                  name: 'cta_copy',
                                   buttonParamsJson: JSON.stringify({
-                                      display_text: 'copy',
+                                      display_text: 'نسخ',
                                       id: 'تربو عمي🤭',
                                       copy_code: 'message'
                                   })
