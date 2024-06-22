@@ -10,8 +10,8 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
     if (device !== 'desktop' || device !== 'web') {      
         var joanimiimg = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/0f8c2b3a0a56eba1f9173.jpg'}}, { upload: conn.waUploadToServer })
         const interactiveMessage = {
-            body: { text: `test`.trim() },
-            footer: { text: `©Turbo for test`.trim() },  
+            body: { text: `𝑻𝑼𝑹𝑩𝑶 𝑩𝑶𝑻⦖🇵🇸`.trim() },
+            footer: { text: `©Turbo 3MK`.trim() },  
             header: {
                 title: `ازيك يا @${mentionId.split('@')[0]}`,
                 subtitle: `test`,
